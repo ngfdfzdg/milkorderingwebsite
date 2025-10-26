@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purevale - Fresh Farm Dairy Delivered to Your Doorstep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="top-bar-left">
+                        <a href="tel:+919876543210" class="top-bar-phone">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-9876543210</span>
+                        </a>
+                        <span><i class="fas fa-star"></i> 5.0 Rating | 1000+ Happy Customers</span>
+                    </div>
+                    <button class="top-bar-btn" data-page="products">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo"><i class="fas fa-cow"></i> Purevale</div>
+                <nav class="nav" id="nav">
+                    <a href="#" data-page="home" class="nav-link active">Home</a>
+                    <a href="#" data-page="products" class="nav-link">Products</a>
+                    <a href="#" data-page="about" class="nav-link">About</a>
+                    <a href="#" data-page="ratings" class="nav-link">Ratings</a>
+                    <a href="#" data-page="cart" class="nav-link cart-link">
+                        <i class="fas fa-shopping-cart cart-icon"></i>
+                        <span class="cart-badge" id="cartBadge">0</span>
+                    </a>
+                </nav>
+                <button class="btn btn--primary login-btn" id="loginBtn">Login / Register</button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <section class="page" id="home" data-page="home">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-overlay"></div>
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1761158794/pplx_project_search_images/b420ca8a5455dfde92348862ec1a5bf6003036f2.png" alt="Fresh Dairy Products" class="hero-image">
+            <div class="hero-content">
+                <h1 class="hero-title">Wholesome Milk Naturally Sourced Every Day</h1>
+                <p class="hero-subtitle">Welcome to the heart of freshness and purity. We provide 100% natural dairy products, straight from healthy, grass-fed cows.</p>
+                <button class="btn btn--primary btn--lg" data-page="products">Explore More</button>
+            </div>
+        </div>
+
+        <!-- Video Slider Section -->
+        <div class="section video-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Quality Process</h2>
+                    <p>See how we ensure freshness from farm to your door</p>
+                </div>
+                
+                <div class="video-slider-wrapper">
+                    <button class="slider-arrow left" id="prevSlide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="video-slider" id="videoSlider">
+                        <div class="video-slide active" data-index="0">
+                            <div class="video-card" style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.9), rgba(74, 144, 226, 0.7));">
+                                <i class="fas fa-play-circle play-icon"></i>
+                            </div>
+                            <h3>Milk Cleaning &amp; Sanitation</h3>
+                            <p>Rigorous cleaning processes ensure purity and hygiene</p>
+                        </div>
+                        
+                        <div class="video-slide" data-index="1">
+                            <div class="video-card" style="background: linear-gradient(135deg, rgba(123, 104, 238, 0.9), rgba(123, 104, 238, 0.7));">
+                                <i class="fas fa-play-circle play-icon"></i>
+                            </div>
+                            <h3>Quality Testing</h3>
+                            <p>Every batch tested for safety, freshness, and quality standards</p>
+                        </div>
+                        
+                        <div class="video-slide" data-index="2">
+                            <div class="video-card" style="background: linear-gradient(135deg, rgba(80, 200, 120, 0.9), rgba(80, 200, 120, 0.7));">
+                                <i class="fas fa-play-circle play-icon"></i>
+                            </div>
+                            <h3>Home Delivery</h3>
+                            <p>Fresh milk delivered to your doorstep daily</p>
+                        </div>
+                    </div>
+                    
+                    <button class="slider-arrow right" id="nextSlide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Text Banner -->
+        <div class="scrolling-banner">
+            <div class="scrolling-content">
+                <span>Fresh Milk ✦ Pure Quality ✦ Daily Delivery ✦ Farm Fresh ✦ Natural Goodness ✦ </span>
+                <span>Fresh Milk ✦ Pure Quality ✦ Daily Delivery ✦ Farm Fresh ✦ Natural Goodness ✦ </span>
+            </div>
+        </div>
+
+        <!-- About Purevale Section -->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Welcome to Purevale</h2>
+                    <p>Your trusted source for farm-fresh dairy products</p>
+                </div>
+                <div class="home-about-section">
+                    <div class="home-about-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1761470786/pplx_project_search_images/e5f515b14b0cb5fde18ff22f35d8e4b7a73826d6.png" alt="Fresh Dairy Products" style="height: 400px;">
+                    </div>
+                    <div class="home-about-content">
+                        <h3>Naturally raised cows, fresh milk guaranteed</h3>
+                        <p>At Purevale, we bring you the finest quality dairy products directly from local farms. Our commitment to purity, freshness, and quality ensures that every product you receive is as fresh as it gets.</p>
+                        <p>Every morning, we source our milk from carefully selected farms where cows are raised naturally on fresh grass and open pastures. This farm-to-table approach guarantees the authentic taste and nutritional value you deserve.</p>
+                        <button class="btn btn--primary" data-page="about">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Products -->
+        <div class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Premium Products</h2>
+                    <p>Handpicked favorites from our collection of pure dairy</p>
+                </div>
+                <div class="products-grid" id="featuredProducts"></div>
+                <div style="text-align: center; margin-top: 48px;">
+                    <button class="btn btn--primary btn--lg" data-page="products">View All Products</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Section -->
+        <div class="section trust-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Where freshness and trust come together daily</h2>
+                    <p>Inspired by nature, sustained by family values</p>
+                </div>
+                <div class="trust-stats">
+                    <div class="trust-stat">
+                        <div class="trust-stat-number" data-count="50000">0+</div>
+                        <div class="trust-stat-label">Fresh, pure milk served to homes and businesses</div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-stat-number" data-count="5000">0+</div>
+                        <div class="trust-stat-label">Trusted by households across the region</div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-stat-number" data-count="100">0+</div>
+                        <div class="trust-stat-label">Ethically raised cows on our family farm</div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="trust-stat-number" data-count="15">0+</div>
+                        <div class="trust-stat-label">Years of trust, tradition, and honest farming</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Purevale?</h2>
+                    <p>Quality you can trust, freshness you can taste</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                        <h3>Farm Fresh</h3>
+                        <p>Directly sourced from local farms daily</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3>No Preservatives</h3>
+                        <p>100% natural with no artificial additives</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h3>Daily Delivery</h3>
+                        <p>Fresh products delivered to your doorstep every morning</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-award"></i></div>
+                        <h3>Quality Assured</h3>
+                        <p>Rigorous quality checks for purity and freshness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="section stats-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Fun and surprising facts about our dairy</h2>
+                    <p>Numbers that tell our story</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-glass-whiskey"></i></div>
+                        <div class="stat-number" data-count="50000">0+</div>
+                        <div class="stat-label">Liters of Milk Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-number" data-count="5000">0+</div>
+                        <div class="stat-label">Happy Families Served</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                        <div class="stat-number" data-count="15500">0+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <div class="stat-number" data-count="5000">0+</div>
+                        <div class="stat-label">Days of Fresh Milk</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What our happy customers say about us</h2>
+                    <p>Pure Milk. Happy Customers Always.</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonials-grid" id="testimonialsGrid">
+                        <div class="testimonial-card">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I've been using this dairy's service for over 18 months now, and I can confidently say they've transformed the way my family consumes milk. The quality is outstanding — it's thick, pure, and you can instantly feel the difference in taste compared to store-bought brands."</p>
+                            <div class="testimonial-author">
+                                <strong>Herman Miller</strong>
+                                <span>Delhi</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The freshness of Purevale products is unmatched. Every morning delivery brings farm-fresh goodness to our doorstep. Highly recommended for families who care about quality!"</p>
+                            <div class="testimonial-author">
+                                <strong>Margaret Ellis</strong>
+                                <span>Gurgaon</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Excellent quality and service! The milk tastes just like it came straight from the farm. My children love it and I feel confident about what I'm serving my family."</p>
+                            <div class="testimonial-author">
+                                <strong>Priya Sharma</strong>
+                                <span>Noida</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog/Articles Section -->
+        <div class="section blog-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Insights, tips &amp; stories about dairy, health</h2>
+                    <p>Learn more about dairy farming and healthy living</p>
+                </div>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <div class="blog-image"><i class="fas fa-leaf"></i></div>
+                        <h3>The Role of Biodiversity in Sustainable Dairy Farming</h3>
+                        <p>Discover how diverse ecosystems contribute to healthier dairy farms</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-image"><i class="fas fa-utensils"></i></div>
+                        <h3>Top 5 Delicious Recipes Using Fresh Milk and Dairy Products</h3>
+                        <p>Creative ways to use farm-fresh dairy in your kitchen</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-image"><i class="fas fa-globe"></i></div>
+                        <h3>How Organic Dairy Farming Supports a Healthier Planet</h3>
+                        <p>Understanding the environmental benefits of organic practices</p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Page -->
+    <section class="page" id="products" data-page="products" style="display: none;">
+        <div class="page-header">
+            <div class="container">
+                <h1>Our Products</h1>
+                <p>Fresh dairy delivered daily to your doorstep</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="milk">Milk</button>
+                    <button class="filter-btn" data-category="ghee">Ghee</button>
+                    <button class="filter-btn" data-category="paneer">Paneer</button>
+                    <button class="filter-btn" data-category="curd">Curd</button>
+                    <button class="filter-btn" data-category="butter">Butter</button>
+                    <button class="filter-btn" data-category="lassi">Lassi</button>
+                </div>
+                <div class="products-grid" id="allProducts"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section class="page" id="about" data-page="about" style="display: none;">
+        <div class="page-header">
+            <div class="container">
+                <h1>About Purevale</h1>
+                <p>Our Story, Mission &amp; Values</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-section">
+                        <h2>Our Story</h2>
+                        <p>Purevale was founded with a simple mission: to bring the authentic taste of farm-fresh dairy to urban households. We partner with local farmers who share our commitment to quality and sustainability, ensuring that every product meets our high standards of purity and freshness.</p>
+                        <p>What started as a small operation has grown into a trusted name in dairy delivery across Delhi NCR. Our success is built on the trust of thousands of families who choose Purevale for their daily dairy needs.</p>
+                    </div>
+
+                    <div class="values-grid">
+                        <h2>Our Values</h2>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-tint"></i></div>
+                                <h3>Purity</h3>
+                                <p>We never compromise on the purity of our products. No adulterants, no preservatives, just pure dairy.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                                <h3>Freshness</h3>
+                                <p>Daily sourcing and delivery ensure that you get the freshest dairy products every morning.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-star"></i></div>
+                                <h3>Quality</h3>
+                                <p>Rigorous quality control at every step from farm to your doorstep.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                                <h3>Sustainability</h3>
+                                <p>Supporting local farmers and sustainable farming practices for a better tomorrow.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-section">
+                        <h2>Our Process</h2>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="process-number">1</div>
+                                <h3>Direct from Farms</h3>
+                                <p>We source our dairy directly from carefully selected local farms every morning.</p>
+                            </div>
+                            <div class="process-arrow">→</div>
+                            <div class="process-step">
+                                <div class="process-number">2</div>
+                                <h3>Quality Testing</h3>
+                                <p>Every batch undergoes rigorous quality and purity checks at our facility.</p>
+                            </div>
+                            <div class="process-arrow">→</div>
+                            <div class="process-step">
+                                <div class="process-number">3</div>
+                                <h3>Daily Delivery</h3>
+                                <p>Products are delivered fresh to your doorstep before 7 AM every day.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-section">
+                        <h2>Contact Us</h2>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <strong>📞 Phone:</strong> +91-9876543210
+                            </div>
+                            <div class="contact-item">
+                                <strong>📧 Email:</strong> contact@purevale.com
+                            </div>
+                            <div class="contact-item">
+                                <strong>📍 Address:</strong> Delhi NCR, India
+                            </div>
+                            <div class="contact-item">
+                                <strong>🕐 Hours:</strong> 6:00 AM - 9:00 PM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ratings Page -->
+    <section class="page" id="ratings" data-page="ratings" style="display: none;">
+        <div class="page-header">
+            <div class="container">
+                <h1>Customer Reviews</h1>
+                <p>See what our customers have to say</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="overall-rating">
+                    <div class="overall-rating-score">
+                        <div class="rating-number">4.7</div>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-count">Based on 156 reviews</div>
+                    </div>
+                </div>
+
+                <div class="reviews-section">
+                    <h2>Customer Reviews</h2>
+                    <div class="reviews-list" id="reviewsList"></div>
+                </div>
+
+                <div class="add-review-section">
+                    <h2>Write a Review</h2>
+                    <form class="review-form" id="reviewForm">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" id="reviewName" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" id="reviewEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Rating</label>
+                            <select class="form-control" id="reviewRating" required>
+                                <option value="5">5 Stars - Excellent</option>
+                                <option value="4">4 Stars - Very Good</option>
+                                <option value="3">3 Stars - Good</option>
+                                <option value="2">2 Stars - Fair</option>
+                                <option value="1">1 Star - Poor</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Product</label>
+                            <select class="form-control" id="reviewProduct" required>
+                                <option value="">Select a product</option>
+                                <option value="Fresh Cow Milk">Fresh Cow Milk</option>
+                                <option value="Buffalo Milk">Buffalo Milk</option>
+                                <option value="Pure Ghee">Pure Ghee</option>
+                                <option value="Fresh Paneer">Fresh Paneer</option>
+                                <option value="Curd">Curd</option>
+                                <option value="Butter">Butter</option>
+                                <option value="Sweet Lassi">Sweet Lassi</option>
+                                <option value="Salted Lassi">Salted Lassi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Your Review</label>
+                            <textarea class="form-control" id="reviewText" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Page -->
+    <section class="page" id="cart" data-page="cart" style="display: none;">
+        <div class="page-header">
+            <div class="container">
+                <h1>Shopping Cart</h1>
+                <p>Review your items and proceed to checkout</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="cart-content" id="cartContent">
+                    <div class="empty-cart" id="emptyCart">
+                        <div class="empty-cart-icon">🛒</div>
+                        <h2>Your cart is empty</h2>
+                        <p>Add some delicious dairy products to get started!</p>
+                        <button class="btn btn--primary" data-page="products">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Page -->
+    <section class="page" id="payment" data-page="payment" style="display: none;">
+        <div class="page-header">
+            <div class="container">
+                <h1>Checkout</h1>
+                <p>Complete your order</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="payment-grid">
+                    <div class="payment-form-section">
+                        <h2>Delivery Details</h2>
+                        <form id="paymentForm">
+                            <div class="form-group">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="deliveryName" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="deliveryPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Address</label>
+                                <textarea class="form-control" id="deliveryAddress" rows="3" required></textarea>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Pincode</label>
+                                    <input type="text" class="form-control" id="deliveryPincode" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">City</label>
+                                    <input type="text" class="form-control" id="deliveryCity" required>
+                                </div>
+                            </div>
+
+                            <h2>Payment Method</h2>
+                            <div class="payment-methods">
+                                <label class="payment-method">
+                                    <input type="radio" name="payment" value="cod" checked>
+                                    <span>Cash on Delivery</span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="payment" value="upi">
+                                    <span>UPI</span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="payment" value="card">
+                                    <span>Debit/Credit Card</span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="payment" value="netbanking">
+                                    <span>Net Banking</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--full-width">Place Order</button>
+                        </form>
+                    </div>
+
+                    <div class="order-summary-section">
+                        <h2>Order Summary</h2>
+                        <div class="order-summary" id="orderSummary"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Register Page -->
+    <section class="page" id="login" data-page="login" style="display: none;">
+        <div class="section">
+            <div class="container">
+                <div class="auth-container">
+                    <div class="auth-tabs">
+                        <button class="auth-tab active" data-tab="login">Login</button>
+                        <button class="auth-tab" data-tab="register">Register</button>
+                    </div>
+
+                    <!-- Login Form -->
+                    <div class="auth-form" id="loginForm">
+                        <h2>Welcome Back!</h2>
+                        <p>Login to continue shopping</p>
+                        <form id="loginFormElement">
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Remember Me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Login</button>
+                            <div class="form-footer">
+                                <a href="#">Forgot Password?</a>
+                            </div>
+                        </form>
+
+                        <div class="social-login">
+                            <p>Or login with</p>
+                            <div class="social-buttons">
+                                <button class="btn btn--outline">Google</button>
+                                <button class="btn btn--outline">Facebook</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Register Form -->
+                    <div class="auth-form" id="registerForm" style="display: none;">
+                        <h2>Create Account</h2>
+                        <p>Join Purevale family today</p>
+                        <form id="registerFormElement">
+                            <div class="form-group">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Register</button>
+                        </form>
+
+                        <div class="social-login">
+                            <p>Or register with</p>
+                            <div class="social-buttons">
+                                <button class="btn btn--outline">Google</button>
+                                <button class="btn btn--outline">Facebook</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Purevale</h3>
+                    <p>Fresh farm dairy delivered to your doorstep every morning.</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#" data-page="home">Home</a>
+                    <a href="#" data-page="products">Products</a>
+                    <a href="#" data-page="about">About</a>
+                    <a href="#" data-page="ratings">Ratings</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +91-9876543210</p>
+                    <p><i class="fas fa-envelope"></i> contact@purevale.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Delhi NCR, India</p>
+                    <p><i class="fas fa-clock"></i> 6:00 AM - 9:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Purevale. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
