@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="top-bar-content">
                     <div class="top-bar-left">
-                        <a href="tel:+91 7396573462" class="top-bar-phone">
+                        <a href="tel:+919876543210" class="top-bar-phone">
                             <i class="fas fa-phone"></i>
                             <span>+91-7396573462</span>
                         </a>
@@ -31,6 +31,7 @@
                     <a href="#" data-page="home" class="nav-link active">Home</a>
                     <a href="#" data-page="products" class="nav-link">Products</a>
                     <a href="#" data-page="about" class="nav-link">About</a>
+                    <a href="#" data-page="contact" class="nav-link">Contact</a>
                     <a href="#" data-page="ratings" class="nav-link">Ratings</a>
                     <a href="#" data-page="cart" class="nav-link cart-link">
                         <i class="fas fa-shopping-cart cart-icon"></i>
@@ -59,6 +60,7 @@
                 <button class="btn btn--primary btn--lg" data-page="products">Explore More</button>
             </div>
         </div>
+          
 
         <!-- Animated Text Banner -->
         <div class="scrolling-banner">
@@ -302,6 +304,124 @@
                     <button class="filter-btn" data-category="lassi">Lassi</button>
                 </div>
                 <div class="products-grid" id="allProducts"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section class="page" id="contact" data-page="contact" style="display: none;">
+        <div class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you. Get in touch with us today.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="contact-page-grid">
+                    <div class="contact-form-section">
+                        <h2>Send us a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="contactPhone">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subject *</label>
+                                <input type="text" class="form-control" id="contactSubject" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message *</label>
+                                <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                        <div class="contact-success-message" id="contactSuccessMessage" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Thank you!</h3>
+                            <p>We'll get back to you soon.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <div class="contact-info-block">
+                            <h3>Get In Touch</h3>
+                            <div class="contact-info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Address</strong>
+                                    <p>Delhi NCR, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <p><a href="tel:+12463330851">+1 (246) 333-0851</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p><a href="mailto:info@purevale.com">info@purevale.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Business Hours</strong>
+                                    <p>6:00 AM - 9:00 PM<br>7 days a week</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-block">
+                            <h3>Follow Us</h3>
+                            <div class="social-media-links">
+                                <a href="https://facebook.com/purevale" target="_blank" class="social-link">
+                                    <i class="fab fa-facebook"></i>
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="https://instagram.com/purevale" target="_blank" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://twitter.com/purevale" target="_blank" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="https://youtube.com/purevale" target="_blank" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>YouTube</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-block">
+                            <h3>Visit Us</h3>
+                            <p>Visit our farm and see the quality firsthand. Experience the freshness and purity of our dairy products in person.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Map Location</p>
+                        <span>Delhi NCR, India</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -663,6 +783,7 @@
                     <a href="#" data-page="home">Home</a>
                     <a href="#" data-page="products">Products</a>
                     <a href="#" data-page="about">About</a>
+                    <a href="#" data-page="contact">Contact</a>
                     <a href="#" data-page="ratings">Ratings</a>
                 </div>
                 <div class="footer-section">
@@ -670,7 +791,7 @@
                     <p><i class="fas fa-phone"></i> +91-7396573462</p>
                     <p><i class="fas fa-envelope"></i> contact@purevale.com</p>
                     <p><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
-                    <p><i class="fas fa-clock"></i>24/7 Available</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Available</p>
                 </div>
             </div>
             <div class="footer-bottom">
