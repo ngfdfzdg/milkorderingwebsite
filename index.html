@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purevale - Fresh Farm Dairy Delivered to Your Doorstep</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ SEO Optimization -->
+  <title>Purevale Dairy | Fresh Cow Milk, Ghee, Butter & Paneer Delivered Daily</title>
+  <meta name="description" content="Purevale delivers 100% natural, farm-fresh dairy products — milk, paneer, curd, butter, ghee, and lassi — straight to your doorstep. Taste purity every day." />
+  <meta name="keywords" content="Purevale, fresh milk, ghee, paneer, curd, butter, lassi, dairy delivery, organic milk, farm fresh dairy, natural milk, cow milk, buffalo milk" />
+  <meta name="author" content="Purevale Dairy" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Purevale - Fresh Farm Dairy Delivered to Your Doorstep" />
+  <meta property="og:description" content="Fresh, pure, and natural dairy — milk, paneer, butter, ghee, and more, delivered daily from trusted local farms." />
+  <meta property="og:image" content="images/purevale-thumbnail.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.purevale.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="https://www.purevale.com/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <!-- Header -->
@@ -53,7 +67,7 @@
         <!-- Hero Section -->
         <div class="hero">
             <div class="hero-overlay"></div>
-            <img src="https://pplx-res.cloudinary.com/image/upload/v1761158794/pplx_project_search_images/b420ca8a5455dfde92348862ec1a5bf6003036f2.png" alt="Fresh Dairy Products" class="hero-image">
+            <img src="https://www.shutterstock.com/image-photo/fresh-dairy-products-milk-cottage-600nw-2625171433.jpg" alt="Fresh Dairy Products" class="hero-image">
             <div class="hero-content">
                 <h1 class="hero-title">Wholesome Milk Naturally Sourced Every Day</h1>
                 <p class="hero-subtitle">Welcome to the heart of freshness and purity. We provide 100% natural dairy products, straight from healthy, grass-fed cows.</p>
@@ -79,7 +93,7 @@
                 </div>
                 <div class="home-about-section">
                     <div class="home-about-image">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1761470786/pplx_project_search_images/e5f515b14b0cb5fde18ff22f35d8e4b7a73826d6.png" alt="Fresh Dairy Products" style="height: 400px;">
+                        <img src="https://media1.thehungryjpeg.com/thumbs2/ori_3941530_sp70lg4uelcmuesepnaphiiz0gi5may3lu3lusrb_farm-fresh-dairy-products-natural-cow-milk-cheese-and-yogurt-in-rura.jpg" alt="Fresh Dairy Products" style="height: 400px;">
                     </div>
                     <div class="home-about-content">
                         <h3>Naturally raised cows, fresh milk guaranteed</h3>
@@ -104,6 +118,7 @@
                 </div>
             </div>
         </div>
+      
 
         <!-- Trust Section -->
         <div class="section trust-section">
@@ -285,147 +300,145 @@
     </section>
 
     <!-- Products Page -->
-    <section class="page" id="products" data-page="products" style="display: none;">
-        <div class="page-header">
-            <div class="container">
-                <h1>Our Products</h1>
-                <p>Fresh dairy delivered daily to your doorstep</p>
-            </div>
+    <!-- Products Page -->
+<section class="page" id="products" data-page="products" style="display: none;">
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Fresh dairy delivered daily to your doorstep</p>
         </div>
-        <div class="section">
-            <div class="container">
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-category="all">All</button>
-                    <button class="filter-btn" data-category="milk">Milk</button>
-                    <button class="filter-btn" data-category="ghee">Ghee</button>
-                    <button class="filter-btn" data-category="paneer">Paneer</button>
-                    <button class="filter-btn" data-category="curd">Curd</button>
-                    <button class="filter-btn" data-category="butter">Butter</button>
-                    <button class="filter-btn" data-category="lassi">Lassi</button>
-                </div>
-                <div class="products-grid" id="allProducts"></div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="milk">Milk</button>
+                <button class="filter-btn" data-category="ghee">Ghee</button>
+                <button class="filter-btn" data-category="paneer">Paneer</button>
+                <button class="filter-btn" data-category="curd">Curd</button>
+                <button class="filter-btn" data-category="butter">Butter</button>
+                <button class="filter-btn" data-category="lassi">Lassi</button>
             </div>
+            <div class="products-grid" id="allProducts"></div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Page -->
-    <section class="page" id="contact" data-page="contact" style="display: none;">
-        <div class="page-header">
-            <div class="container">
-                <h1>Contact Us</h1>
-                <p>We'd love to hear from you. Get in touch with us today.</p>
+<!-- Product Details Modal -->
+<div id="productModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <div class="modal-body">
+            <div class="modal-slider">
+                <img id="modalImage" src="" alt="Product Image" class="active" />
             </div>
-        </div>
-        <div class="section">
-            <div class="container">
-                <div class="contact-page-grid">
-                    <div class="contact-form-section">
-                        <h2>Send us a Message</h2>
-                        <form class="contact-form" id="contactForm">
-                            <div class="form-group">
-                                <label class="form-label">Full Name *</label>
-                                <input type="text" class="form-control" id="contactName" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Email Address *</label>
-                                <input type="email" class="form-control" id="contactEmail" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" id="contactPhone">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Subject *</label>
-                                <input type="text" class="form-control" id="contactSubject" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Message *</label>
-                                <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn--primary btn--full-width">
-                                <i class="fas fa-paper-plane"></i> Send Message
-                            </button>
-                        </form>
-                        <div class="contact-success-message" id="contactSuccessMessage" style="display: none;">
-                            <i class="fas fa-check-circle"></i>
-                            <h3>Thank you!</h3>
-                            <p>We'll get back to you soon.</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-section">
-                        <div class="contact-info-block">
-                            <h3>Get In Touch</h3>
-                            <div class="contact-info-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <strong>Address</strong>
-                                    <p>Delhi NCR, India</p>
-                                </div>
-                            </div>
-                            <div class="contact-info-item">
-                                <i class="fas fa-phone"></i>
-                                <div>
-                                    <strong>Phone</strong>
-                                    <p><a href="tel:+12463330851">+1 (246) 333-0851</a></p>
-                                </div>
-                            </div>
-                            <div class="contact-info-item">
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <strong>Email</strong>
-                                    <p><a href="mailto:info@purevale.com">info@purevale.com</a></p>
-                                </div>
-                            </div>
-                            <div class="contact-info-item">
-                                <i class="fas fa-clock"></i>
-                                <div>
-                                    <strong>Business Hours</strong>
-                                    <p>6:00 AM - 9:00 PM<br>7 days a week</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="contact-info-block">
-                            <h3>Follow Us</h3>
-                            <div class="social-media-links">
-                                <a href="https://facebook.com/purevale" target="_blank" class="social-link">
-                                    <i class="fab fa-facebook"></i>
-                                    <span>Facebook</span>
-                                </a>
-                                <a href="https://instagram.com/purevale" target="_blank" class="social-link">
-                                    <i class="fab fa-instagram"></i>
-                                    <span>Instagram</span>
-                                </a>
-                                <a href="https://twitter.com/purevale" target="_blank" class="social-link">
-                                    <i class="fab fa-twitter"></i>
-                                    <span>Twitter</span>
-                                </a>
-                                <a href="https://youtube.com/purevale" target="_blank" class="social-link">
-                                    <i class="fab fa-youtube"></i>
-                                    <span>YouTube</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="contact-info-block">
-                            <h3>Visit Us</h3>
-                            <p>Visit our farm and see the quality firsthand. Experience the freshness and purity of our dairy products in person.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="map-section">
-                    <div class="map-placeholder">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <p>Map Location</p>
-                        <span>Delhi NCR, India</span>
-                    </div>
+            <div class="modal-details">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div class="modal-buttons">
+                    <button class="btn btn--primary" id="modalBuyBtn">Buy Now</button>
+                    <button class="btn btn--outline" id="modalCartBtn">Add to Cart</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
 
+                                     <!-- Contact Page -->
+<section class="page" id="contact" data-page="contact" style="display: none;">
+    <div class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with us today.</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <!-- Updated Grid: Left = Form, Right = Social -->
+            <div class="contact-grid">
+                <!-- LEFT: Send Us a Message Form (Unchanged) -->
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="contactPhone">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Subject *</label>
+                            <input type="text" class="form-control" id="contactSubject" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message *</label>
+                            <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <div class="contact-success-message" id="contactSuccessMessage" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Thank you!</h3>
+                        <p>Your message has been sent. We'll get back to you soon.</p>
+                    </div>
+                </div>
+
+                <!-- RIGHT: New Get in Touch Section with Social Links -->
+                <div class="contact-social-section">
+                    <h2>Get in Touch</h2>
+                    <p>Follow us on social media for updates, recipes, and behind-the-scenes farm stories.</p>
+                    
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/purevalleydairy/" target="_blank" class="social-link" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://x.com/purevalleydairy" target="_blank" class="social-link" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i> <!-- X icon is fa-twitter in Font Awesome -->
+                            <span>X (Twitter)</span>
+                        </a>
+                        <a href="https://www.facebook.com/purevallerydairy/" target="_blank" class="social-link" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+
+                    <!-- Optional: Quick Contact Info (can remove if not needed) -->
+                    <div class="quick-contact">
+                        <h3>Quick Contact</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i> +91-7396573462
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i> contact@purevale.com
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i> Delhi NCR, India
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section (Unchanged, below the grid) -->
+            <div class="map-section">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Map Location</p>
+                    <span>Delhi NCR, India</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- About Page -->
     <section class="page" id="about" data-page="about" style="display: none;">
         <div class="page-header">
@@ -442,6 +455,15 @@
                         <p>Purevale was founded with a simple mission: to bring the authentic taste of farm-fresh dairy to urban households. We partner with local farmers who share our commitment to quality and sustainability, ensuring that every product meets our high standards of purity and freshness.</p>
                         <p>What started as a small operation has grown into a trusted name in dairy delivery across Delhi NCR. Our success is built on the trust of thousands of families who choose Purevale for their daily dairy needs.</p>
                     </div>
+<div class="about-section">
+    <h2>Our Mission</h2>
+    <p>To provide high-quality, natural dairy products that promote health and well-being while supporting sustainable farming practices and local communities.</p>
+</div>
+
+<div class="about-section">
+    <h2>Our Vision</h2>
+    <p>To become the leading provider of farm-fresh dairy in the region, known for our unwavering commitment to purity, freshness, customer satisfaction, and environmental sustainability.</p>
+</div>
 
                     <div class="values-grid">
                         <h2>Our Values</h2>
